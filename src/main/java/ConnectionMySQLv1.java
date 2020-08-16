@@ -2,7 +2,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Test {
+public class ConnectionMySQLv1 {
 	
     private final String driverName = "com.mysql.jdbc.Driver";
     private final String connectionString = "jdbc:mysql://localhost:3306/sakila";
@@ -32,11 +32,11 @@ public class Test {
             e.printStackTrace();
             return;
         }
-        System.out.println("connect...");
+        System.out.println("connection to MySQL v1...");
     }
     
     public static void main(String[] args) {
-        Test app = new Test();
+    	ConnectionMySQLv1 app = new ConnectionMySQLv1();
         app.run();
     }
 }
