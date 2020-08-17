@@ -30,6 +30,7 @@ public class ConnectionOracle {
 				System.out.println("--------------------------");
 			}
 			
+			connection.close();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
