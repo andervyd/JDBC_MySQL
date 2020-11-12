@@ -2,27 +2,35 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>by.andervyd</groupId>
-  <artifactId>JDBC_MySQL</artifactId>
+  <artifactId>JDBC_SQL</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
+	<properties>
+
+		<mysql-con.version>8.0.21</mysql-con.version>
+		<oracle-con.version>18.3.0.0</oracle-con.version>
+		<postgre-con.version>42.2.15</postgre-con.version>
+
+	</properties>
+
 
 	<dependencies>
 		<dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
-		    <version>8.0.21</version>
+		    <version>${mysql-con.version}</version>
 		</dependency>
 				
 		<dependency>
 		    <groupId>com.oracle.database.jdbc</groupId>
 		    <artifactId>ojdbc8</artifactId>
-		    <version>18.3.0.0</version>
+		    <version>${oracle-con.version}</version>
 		</dependency>
 
 		<dependency>
 		    <groupId>org.postgresql</groupId>
 		    <artifactId>postgresql</artifactId>
-		    <version>42.2.15</version>
+		    <version>${postgre-con.version}</version>
 		</dependency>
 				
   </dependencies>
