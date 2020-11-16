@@ -1,3 +1,5 @@
+package postgre;
+
 import java.sql.*;
 
 public class ConnectionPostgreSQL {
